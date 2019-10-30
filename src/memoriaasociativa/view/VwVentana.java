@@ -16,6 +16,9 @@ public class VwVentana extends javax.swing.JFrame {
         lbl_noWidth = new javax.swing.JLabel();
         lbl_noHeight = new javax.swing.JLabel();
         sldr_height = new javax.swing.JSlider();
+        btn_addPtrn = new javax.swing.JButton();
+        btn_creatMemory = new javax.swing.JButton();
+        btn_reset = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -33,6 +36,12 @@ public class VwVentana extends javax.swing.JFrame {
         sldr_height.setMinimum(3);
         sldr_height.setValue(3);
 
+        btn_addPtrn.setText("Agregar patron");
+
+        btn_creatMemory.setText("Crear memoria");
+
+        btn_reset.setText("Reiniciar lista de patrones");
+
         javax.swing.GroupLayout pnl_datLayout = new javax.swing.GroupLayout(pnl_dat);
         pnl_dat.setLayout(pnl_datLayout);
         pnl_datLayout.setHorizontalGroup(
@@ -41,6 +50,9 @@ public class VwVentana extends javax.swing.JFrame {
             .addComponent(lbl_noHeight, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 167, Short.MAX_VALUE)
             .addComponent(sldr_height, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addComponent(sldr_width, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btn_addPtrn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btn_creatMemory, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(btn_reset, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         pnl_datLayout.setVerticalGroup(
             pnl_datLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -53,7 +65,13 @@ public class VwVentana extends javax.swing.JFrame {
                 .addComponent(lbl_noHeight, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(sldr_height, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(291, 291, 291))
+                .addGap(18, 18, 18)
+                .addComponent(btn_addPtrn)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_creatMemory)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_reset)
+                .addGap(166, 166, 166))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -66,7 +84,9 @@ public class VwVentana extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pnl_dat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(pnl_dat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 32, Short.MAX_VALUE))
         );
 
         pack();
@@ -109,6 +129,9 @@ public class VwVentana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btn_addPtrn;
+    public javax.swing.JButton btn_creatMemory;
+    public javax.swing.JButton btn_reset;
     public javax.swing.JLabel lbl_noHeight;
     public javax.swing.JLabel lbl_noWidth;
     public javax.swing.JPanel pnl_dat;

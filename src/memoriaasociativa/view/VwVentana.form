@@ -31,7 +31,10 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="pnl_dat" alignment="0" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="pnl_dat" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -48,6 +51,9 @@
               <Component id="lbl_noHeight" alignment="1" pref="167" max="32767" attributes="0"/>
               <Component id="sldr_height" alignment="1" pref="0" max="32767" attributes="0"/>
               <Component id="sldr_width" alignment="1" pref="0" max="32767" attributes="0"/>
+              <Component id="btn_addPtrn" alignment="0" max="32767" attributes="0"/>
+              <Component id="btn_creatMemory" alignment="0" max="32767" attributes="0"/>
+              <Component id="btn_reset" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -61,7 +67,13 @@
                   <Component id="lbl_noHeight" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="sldr_height" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="291" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="btn_addPtrn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btn_creatMemory" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btn_reset" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="166" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -100,6 +112,30 @@
             <Property name="maximum" type="int" value="30"/>
             <Property name="minimum" type="int" value="3"/>
             <Property name="value" type="int" value="3"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_addPtrn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Agregar patron"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_creatMemory">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Crear memoria"/>
+          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JButton" name="btn_reset">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Reiniciar lista de patrones"/>
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
