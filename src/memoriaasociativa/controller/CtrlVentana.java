@@ -22,7 +22,7 @@ public class CtrlVentana implements ChangeListener{
         this.vventana.lbl_noWidth.setText("Width: "+this.vventana.sldr_width.getValue());
         this.mgrid.setDimension(this.vventana.sldr_width.getValue(), this.vventana.sldr_height.getValue());
         this.vgrid = new VwGrid(this.mgrid);
-        this.vgrid.setBounds(this.vventana.pnl_dat.getWidth(), 0, this.vventana.getWidth()-this.vventana.pnl_dat.getWidth(), this.vventana.getHeight());
+        this.vgrid.setBounds(this.vventana.pnl_dat.getWidth(), 0, this.vventana.getWidth()-this.vventana.pnl_dat.getWidth()-100, this.vventana.getHeight()-100);
         MdlGrid.widthLienzo = this.vgrid.getWidth();
         MdlGrid.heightLienzo = this.vgrid.getHeight();
         
